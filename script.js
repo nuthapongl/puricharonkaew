@@ -1,13 +1,14 @@
 (() => {
   const MASTER_WIDTH = 1440;
   const MASTER_HEIGHT = 19244;
+  const DESKTOP_SCALE = 0.8;
   const root = document.documentElement;
   const shell = document.getElementById("site-shell");
 
   let scale = 1;
 
   function updateScale() {
-    scale = Math.min(1, window.innerWidth / MASTER_WIDTH);
+    scale = Math.min(DESKTOP_SCALE, window.innerWidth / MASTER_WIDTH);
     root.style.setProperty("--scale", scale.toFixed(6));
     shell.style.height = `${MASTER_HEIGHT * scale}px`;
   }
