@@ -434,6 +434,58 @@ a {
 .caption-people { top: 7652px; left: 60px; width: 164px; }
 .caption-intro-ui { top: 8263px; left: 60px; width: 224px; }
 
+.color-usage-clean-layer {
+  position: absolute;
+  top: 6493.515px;
+  left: 60px;
+  width: 651.731px;
+  height: 330px;
+  background: var(--paper);
+}
+
+.color-usage-clean-layer > span {
+  position: absolute;
+  display: block;
+  height: 321.97px;
+  border: 0;
+}
+
+.color-usage-white {
+  top: 0;
+  left: -3px;
+  width: 265.665px;
+  height: 330px;
+  background: var(--paper);
+}
+
+.color-usage-turquoise {
+  top: 4px;
+  left: 262.665px;
+  width: 154.66px;
+  background: #4ad4ca;
+}
+
+.color-usage-charcoal {
+  top: 4px;
+  left: 416.33px;
+  width: 74.9px;
+  background: #22252f;
+}
+
+.color-usage-blue {
+  top: 3px;
+  left: 491.231px;
+  width: 85.6px;
+  background: #3196f8;
+}
+
+.color-usage-lime {
+  top: 4px;
+  left: 576.831px;
+  width: 74.9px;
+  background: #e1fd41;
+}
+
 .native-body-copy {
   position: absolute;
   margin: 0;
@@ -447,6 +499,19 @@ a {
   left: 270px;
   width: 496px;
   height: 107px;
+  isolation: isolate;
+  background: #f7f6f4;
+}
+
+.birdy-copy::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -124px;
+  left: -42px;
+  width: 579px;
+  height: 355px;
+  border-radius: 0;
   background: #f7f6f4;
 }
 .dhc-copy {
