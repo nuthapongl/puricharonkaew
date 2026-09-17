@@ -106,11 +106,20 @@ a {
 }
 
 /* Hide the rasterized copies before placing crisp native text above them. */
+.about-section-clean-layer,
 .closing-name-scrim,
 .footer-clean-layer {
   position: absolute;
   z-index: 4;
   pointer-events: none;
+}
+
+.about-section-clean-layer {
+  top: 1024px;
+  left: 0;
+  width: 1440px;
+  height: 941px;
+  background: var(--paper);
 }
 
 .closing-name-scrim {
@@ -133,6 +142,7 @@ a {
   position: absolute;
   z-index: 5;
   inset: 0;
+  transform: translateY(-80px);
   font-family: "Inter", Arial, Helvetica, sans-serif;
   font-weight: 400;
   color: #000;
@@ -224,6 +234,7 @@ a {
   position: absolute;
   z-index: 5;
   inset: 0;
+  transform: translateY(-80px);
   font-family: "Inter", Arial, Helvetica, sans-serif;
   font-weight: 400;
   color: #000;
@@ -257,6 +268,17 @@ a {
   font-weight: 400;
   line-height: 32px;
   white-space: nowrap;
+}
+
+.skill-text::before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: -26px;
+  width: 18px;
+  height: 18px;
+  border-radius: 1px;
+  background: linear-gradient(90deg, #858585 0%, #ededed 100%);
 }
 
 .skill-visual {
